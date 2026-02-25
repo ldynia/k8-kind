@@ -7,7 +7,7 @@
 
 ```bash
 kind create cluster --name nebula --config cluster.yaml
-kind create cluster --name orion --config cluster.yaml
+kind create cluster --name orion --config ha-cluster.yaml
 
 kubectl cluster-info --context kind-nebula
 kubectl get nodes
